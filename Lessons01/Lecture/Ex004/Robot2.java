@@ -1,4 +1,5 @@
-package Lessons01.Lecture01.Ex004;
+// Версия 2
+package Lessons01.Lecture.Ex004;
 
 public class Robot2 {
         /**Уровень робота */
@@ -20,23 +21,23 @@ public class Robot2 {
         
         // Методы вкл\выкл подсистем
         
-        public void powerOn(){
+        public void powerOn(){ // Объедили несколько методов для включения 
             this.startBIOS();
             this.startOS();
             this.sayHi();
         }
 
-        public void powerOff(){
+        public void powerOff(){ // Объедили несколько методов для выключения
             this.sayBye();
             this.stopOS();
             this.stopBIOS();
         }
 
-        public int getLevel(){
+        public int getLevel(){ // Метод чтобы нельзя было изменить уровень 
             return this.level;
         }        
 
-        public String getName(){
+        public String getName(){ // Метод чтобы нельзя поменять имя робота
             return this.name;
         }        
 

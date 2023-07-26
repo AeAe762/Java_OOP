@@ -1,5 +1,5 @@
-package Lessons01.Lecture01.Ex006;
-
+package Lessons01.Lecture.Ex007;
+ 
 public class Magician extends BaseHero {
 
     private int mana;
@@ -12,14 +12,7 @@ public class Magician extends BaseHero {
         this.mana = maxMana;
     }
 
-    public int Attack() {
-        int damage = BaseHero.r.nextInt(20, 30);
-        this.mana -= (int)(damage * 0.8);
-        if (mana < 0) return 0;
-        else return damage;
-    }
-
     public String getInfo() {
-        return String.format("%s  Mana: %d", super.getInfo(), this.mana);
+        return String.format("%s  Mana: %d",super.getInfo(), this.mana);
     }
 }

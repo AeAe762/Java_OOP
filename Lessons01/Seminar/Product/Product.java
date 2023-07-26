@@ -15,9 +15,9 @@ public class Product {
    */
 
   // сеттер
-  public void setName(String name) { // Принимаем аргумент
+  /* public void setName(String name) { // Принимаем аргумент
     this.name = name; // Сохраняем аргумент в поле Имя Класса. this - обращение к текущему объекту
-  }
+  } */
 
   // геттер
   public String getName() { // Ничего не принимает

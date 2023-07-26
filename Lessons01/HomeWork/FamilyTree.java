@@ -1,19 +1,12 @@
 package Lessons01.HomeWork;
 
-
 import java.util.ArrayList;
 import java.util.List;
-
-
-
-
-
+import Lessons01.HomeWork.Human;
 
 public class FamilyTree {
   private List<Human> humanList;
-  private String name;
 
-  
   public void addHuman(Human human){ 
     humanList.add(human); 
   }
@@ -23,7 +16,7 @@ public class FamilyTree {
   }
 
 
-   public Human findHumanByName () {
+   public Human findHumanByName (String name) {
     for (Human human: humanList) {
       if (human.getName().equalsIgnoreCase(name)) {
         return human;

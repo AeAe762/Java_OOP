@@ -1,4 +1,4 @@
-package Lessons01.Lecture01.Ex004;
+package Lessons01.Lecture.Ex004;
 
 import java.util.ArrayList;
 
@@ -8,12 +8,12 @@ public class Robot3 {
         On, Off
     }
 
-    private static int defaultIndex;
-    private static ArrayList<String> names;
+    private static int defaultIndex;        // Статические поля для того чтобы избежать повторов имен у робота 
+    private static ArrayList<String> names;  //
 
     static {
-        defaultIndex = 1;
-        names = new ArrayList<String>();
+        defaultIndex = 1; // Присваиваем индекс = 1
+        names = new ArrayList<String>(); // переменной name  присваиваем пустую коллекцию
     }
 
     /** Уровень робота */
@@ -22,7 +22,7 @@ public class Robot3 {
     /** Имя робота */
     private String name;
 
-    private State state;
+    private State state; // Добавили поле состояние либо вкл либо выкл
 
     /**
      * Создание робота

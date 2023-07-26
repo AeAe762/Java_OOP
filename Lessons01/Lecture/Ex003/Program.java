@@ -1,4 +1,4 @@
-package Lessons01.Lecture01.Ex003;
+package Lessons01.Lecture.Ex003;
 
 public class Program {
 

@@ -1,4 +1,4 @@
-package Lessons01.Lecture01.Ex004;
+package Lessons01.Lecture.Ex004;
 
 public class Robot1 {
         /**Уровень робота */
@@ -12,8 +12,7 @@ public class Robot1 {
          * @param name Имя робота !Не должно начинаться с цифры
          * @param level Уровень робота
          */
-        public Robot1(String name, int level)
-        {
+        public Robot1(String name, int level) { // Конструктор определяющий имя и уровень
             this.name = name;
             this.level = level;
         }
